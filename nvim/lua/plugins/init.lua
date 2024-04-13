@@ -12,6 +12,7 @@ return {
       -- refer to the configuration section below
     }
   },
+  { 'numToStr/Comment.nvim', lazy = false, },
   { "folke/neoconf.nvim",    cmd = "Neoconf" },
 }
 

@@ -21,6 +21,7 @@ local opts = {
 	},
 	install = {
 		colorscheme = {"kanagawa"},
+		-- colorscheme = {"melange"},
 	},
 	rtp = {
 		disabled_plugins = {
@@ -37,3 +38,4 @@ local opts = {
 }
 
 require("lazy").setup("plugins", opts)
+require('Comment').setup()
