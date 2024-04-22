@@ -27,7 +27,7 @@ return {
       map('n', '<leader>gR', gs.reset_buffer, "Git reset buffer")
       map('n', '<leader>gP', gs.preview_hunk, "Git preview hunk")
       map('n', '<leader>gB', function() gs.blame_line { full = true } end, "Git blame line")
-      map('n', '<leader>gtb', gs.toggle_current_line_blame, "Git toggle current line blame")
+      map('n', '<leader>gb', gs.toggle_current_line_blame, "Git toggle current line blame")
       map('n', '<leader>gd', gs.diffthis, "Git diff this")
       map('n', '<leader>gD', function() gs.diffthis('~') end, "Git diff this")
       map('n', '<leader>gtd', gs.toggle_deleted, "Git toggle deleted")
