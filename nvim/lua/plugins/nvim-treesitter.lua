@@ -10,11 +10,7 @@ local config = function()
       enable = true,
     },
     ensure_installed = {
-      "c",
-      "cpp",
-      "lua",
-      "markdown",
-      "go"
+      'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc',
     },
   })
 end

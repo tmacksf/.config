@@ -65,7 +65,7 @@ local lua_setup = {
 -- Go
 local go_setup = {
   on_attach = on_attach,
-  cmd = {"/home/thomas/go/bin/gopls"},
+  cmd = { "/home/thomas/go/bin/gopls" },
 }
 
 local config = function()
@@ -81,6 +81,8 @@ local config = function()
   lspconfig.clangd.setup({ on_attach = on_attach })
   lspconfig.gopls.setup(go_setup)
   lspconfig.pylsp.setup({ on_attach = on_attach })
+  lspconfig.rust_analyzer.setup({ on_attach = on_attach })
+  lspconfig.markdown_oxide.setup({ on_attach = on_attach })
 
   -- Setting up formatters and linters
   local luacheck = require("efmls-configs.linters.luacheck")
@@ -128,11 +130,11 @@ local config = function()
 end
 
 return {
-	"neovim/nvim-lspconfig",
-	lazy = false,
-	config = config,
-	dependencies = {
-		"williamboman/mason.nvim",
-		"creativenull/efmls-configs-nvim",
-	},
+  "neovim/nvim-lspconfig",
+  lazy = false,
+  config = config,
+  dependencies = {
+    "williamboman/mason.nvim",
+    "creativenull/efmls-configs-nvim",
+  },
 }

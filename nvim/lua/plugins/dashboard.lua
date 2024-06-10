@@ -29,7 +29,8 @@ return {
           { action = "Telescope live_grep", desc = " Find text", icon = " ", key = "g" },
           -- { action = [[lua require("lazyvim.util").telescope.config_files()()]], desc = " Config",          icon = " ", key = "c" },
           { action = "Lazy", desc = " Lazy", icon = "󰒲 ", key = "l" },
-          { action = "NvimTreeToggle", desc = " Tree", icon = "", key = "e" },
+          { action = "Mason", desc = " Mason", icon = "M ", key = "m" },
+          { action = "NvimTreeToggle", desc = " Tree", icon = " ", key = "e" },
           { action = "qa", desc = " Quit", icon = " ", key = "q" },
         },
         footer = function()
