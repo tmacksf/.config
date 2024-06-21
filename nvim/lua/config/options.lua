@@ -15,7 +15,7 @@ opt.smartcase = true
 -- opt.hlsearch = true
 
 -- Remove newline comment
-opt.formatoptions:remove({ "c", "m", "k"})
+opt.formatoptions:remove({ "c", "m", "k" })
 
 -- Appearance
 opt.number = true
@@ -26,12 +26,12 @@ opt.signcolumn = "yes"
 opt.cmdheight = 1
 opt.scrolloff = 10
 --opt.completeopt = "menuone,noinsert,noselect"
+-- TODO: custom cursor
+-- opt.guicursor =
 
 -- Behaviour
 opt.splitright = true -- new panes go right
 opt.splitbelow = true -- new panes go below
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
--- TODO: custom cursor
--- opt.guicursor =
 opt.encoding = "UTF-8"
