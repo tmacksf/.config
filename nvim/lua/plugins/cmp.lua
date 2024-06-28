@@ -1,3 +1,11 @@
+EnableCmp = function()
+  require("cmp").setup({ enabled = true })
+end
+
+DisableCmp = function()
+  require("cmp").setup({ enabled = false })
+end
+
 return {
   {
     "hrsh7th/cmp-nvim-lsp"
