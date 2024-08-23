@@ -11,3 +11,6 @@ keymap.set("n", "<c-j>", "<C-w>j", opts)
 keymap.set("n", "<leader>sv", ":vsplit<CR>", opts)
 keymap.set("n", "<leader>sh", ":split<CR>", opts)
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", opts)
+
+keymap.set("n", "<C-S-k>", "ddkP", opts) -- moves up one line
+keymap.set("n", "<C-S-j>", "ddp", opts)  -- moves down one line

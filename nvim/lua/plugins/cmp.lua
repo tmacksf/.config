@@ -1,21 +1,16 @@
-EnableCmp = function()
-  require("cmp").setup({ enabled = true })
-end
-
-DisableCmp = function()
-  require("cmp").setup({ enabled = false })
-end
-
 local cmp_enabled = false
 vim.api.nvim_create_user_command("ToggleAutoComplete", function()
   if cmp_enabled then
-    require("cmp").setup.buffer({ enabled = false })
     cmp_enabled = false
+    require("cmp").setup.buffer({ enabled = cmp_enabled })
+    vim.api.nvim_command('echo "Cmp disabled"')
   else
-    require("cmp").setup.buffer({ enabled = true })
     cmp_enabled = true
+    require("cmp").setup.buffer({ enabled = cmp_enabled })
+    vim.api.nvim_command('echo "Cmp enabled"')
   end
 end, {})
+
 vim.keymap.set("n", "<Leader>ct", "<cmd>ToggleAutoComplete<cr>", { noremap = true, desc = "Toggle cmp" })
 
 return {
