@@ -1,2 +1,0 @@
--- return { 'numToStr/Comment.nvim', lazy = false, }
-return {}

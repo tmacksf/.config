@@ -19,10 +19,6 @@ local opts = {
   defaults = {
     lazy = true,
   },
-  -- install = {
-  -- 	colorscheme = {"kanagawa"},
-  -- 	-- colorscheme = {"melange"},
-  -- },
   rtp = {
     disabled_plugins = {
       "gzip",
@@ -39,3 +35,4 @@ local opts = {
 
 require("lazy").setup("plugins", opts)
 require('Comment').setup()
+DefaultTheme()

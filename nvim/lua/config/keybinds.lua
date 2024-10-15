@@ -14,3 +14,6 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", opts)
 
 keymap.set("n", "<C-S-k>", "ddkP", opts) -- moves up one line
 keymap.set("n", "<C-S-j>", "ddp", opts)  -- moves down one line
+
+-- Rebind esc
+-- keymap.set("",
