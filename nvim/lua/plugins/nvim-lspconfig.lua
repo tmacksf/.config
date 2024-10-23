@@ -84,5 +84,32 @@ return {
     dependencies = {
       "williamboman/mason.nvim",
     },
+  },
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+    cmd = "Mason",
+    keys = { { "<leader>M", "<Cmd>Mason<CR>", desc = "Mason" } },
+    opts = {
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
+      },
+    },
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "lua_ls",
+      },
+      automatic_installation = true,
+    },
+    lazy = false,
+    event = "BufReadPre",
+    dependencies = "williamboman/mason.nvim",
   }
 }

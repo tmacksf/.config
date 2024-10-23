@@ -28,7 +28,7 @@ local M = {
       styles = { "dark" },
       transparent = false,
       activate = function(_, _)
-        vim.cmd.colorscheme("gruberdarker")
+        vim.cmd.colorscheme("gruber-darker")
       end,
     },
     gruvbox = {
