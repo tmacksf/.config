@@ -44,3 +44,7 @@ Themes = function(opts)
     end,
   }):find()
 end
+
+
+vim.keymap.set("n", "<leader>ft", ":lua Themes(require(\"telescope.themes\").get_dropdown{})<CR>",
+      { desc = 'Telescope change theme' })

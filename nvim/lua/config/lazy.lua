@@ -35,4 +35,5 @@ local opts = {
 
 require("lazy").setup("plugins", opts)
 require('Comment').setup()
+require('themes/theme_selector')
 DefaultTheme()
